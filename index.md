@@ -2,6 +2,6 @@
 
 ### About Me
 
-![Picture of Me](/Users/samkirkham/Downloads/IMG_3403.jpeg)
+![Picture of Me](IMG_3403.jpeg)
 
 
