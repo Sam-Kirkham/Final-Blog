@@ -18,7 +18,7 @@ website:
           - text: "All Projects"
             href: index.md
           - text: "---" 
-          - text: "Exploratory Data Analysis"
+          - text: "Data Wrangling ang Visualization"
             href: blog.qmd
     right:
       - icon: github

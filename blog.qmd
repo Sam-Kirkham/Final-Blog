@@ -33,3 +33,29 @@ data["Home/Away"] = data["Match_Up"].apply(home_away)
 
 print(data.head())
 ```
+
+### Data Analysis and Visualization
+After doing some basic data wrangling, I did some simple data analysis and created a visual to help understand the data. Since I am interested in learning whether home court advantage exists for this basketball team I calculated the win percentages at both home and away. So we can see in the code output that the team wins at home 55 percent of the time and wins on the road 41 percent of the time. The visual that I created shows both the wins and losses at home and away so viewers can see the difference and compare.
+
+```{python}
+import matplotlib.pyplot as plt
+home_wins = data[(data['Home/Away'] == 'Home') & (data['W/L'] == 'W')]
+home_total = data[data['Home/Away'] == 'Home']
+home_win_pct = len(home_wins) / len(home_total)
+print(home_win_pct)
+
+away_wins = data[(data['Home/Away'] == 'Away') & (data['W/L'] == 'W')]
+away_total = data[data['Home/Away'] == 'Away']
+away_win_pct = len(away_wins) / len(away_total)
+print(away_win_pct)
+
+
+summary = pd.crosstab(data['Home/Away'], data['W/L'])
+summary.plot(kind='bar', figsize=(8,5), color=['lightcoral', 'mediumseagreen'])
+plt.title('Results for Home and Away Games')
+plt.xlabel(None)
+plt.ylabel('Number of Games')
+```
+
+### Conclusion and Call to Action
+After doing just some basic data wrangling, analysis and visualization we can see that the team does win more when they are playing at home, however just with this basic level of anaysis we cannot make any strong conclusions that playing at home will lead to more wins than playing away. In order to form that conclusion we would need to do a more in depth analysis. The main takeaway for readers should be that there are simple ways to import, clean, analyze and visualize data that can be done with a few simple functions and packages. People interested in data can apply this same process by following the steps and even utalizing some of the code shown here to help them understand the data that they are working on.
