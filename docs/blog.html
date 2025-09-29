@@ -214,7 +214,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#data-wrangling-and-visual" id="toc-data-wrangling-and-visual" class="nav-link active" data-scroll-target="#data-wrangling-and-visual">Data Wrangling And Visual</a>
   <ul class="collapse">
-  <li><a href="#body" id="toc-body" class="nav-link" data-scroll-target="#body">Body</a></li>
+  <li><a href="#importing-data" id="toc-importing-data" class="nav-link" data-scroll-target="#importing-data">Importing Data</a></li>
+  <li><a href="#data-wrangling" id="toc-data-wrangling" class="nav-link" data-scroll-target="#data-wrangling">Data Wrangling</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -247,10 +248,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h4 class="anchored" data-anchor-id="introduction">Introduction</h4>
 <p>Having usable, clean data is essential part of the data science process. In this tutorial I will teach some basic data wrangling steps and teach how users how to create a few simple visuals for that data. This blog will help students and other users understand the importance of data wrangling as well as introduce them to single data wrangling steps. I will be using data from the Los Angeles Lakers trying to answer the question of if home court advantage really helps teams win.</p>
 </section>
-<section id="body" class="level3">
-<h3 class="anchored" data-anchor-id="body">Body</h3>
+<section id="importing-data" class="level3">
+<h3 class="anchored" data-anchor-id="importing-data">Importing Data</h3>
 <p>The very first thing that we need to do in answering the question of if home court advantage really helps teams win is to get clean and usable data that will show us trends and help us come up with an answer. The data set that I found contains quite a bit of information, such as points scored, field goals made, and free throw percentage. However, in this tutorial we are not interested in those variables. As part of data wrangling we can make the data a whole lot cleaner simply by eliminating the variables that we are not interested in. When reading in data using the “pd.read_csv()” function we can use the built-in feature of “usecols =” to select the columns from the dataset that we are interested in. Here you can see that I selected to use the columns “MATCH UP”, “GAME DATE”, and “W/L”</p>
-<div id="dc31a0ac" class="cell" data-execution_count="1">
+<div id="46939f91" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd, json</span>
@@ -268,7 +269,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 4  LAL vs. PHX  05/09/2021   W</code></pre>
 </div>
 </div>
-<div id="5be16c0f" class="cell" data-execution_count="2">
+</section>
+<section id="data-wrangling" class="level3">
+<h3 class="anchored" data-anchor-id="data-wrangling">Data Wrangling</h3>
+<p>After importing the data I need to do some data wrangling in order to do any anlysis towards the main question. I renamed the columns using the function “data.rename” for simplicity. After renaming the columns it was easier to run it through a function to seperate Home and Away games. To do this I created the “home_away” fuction which goes through the columns and if the designated string is in the value it assigns either “Home” or “Away”. I then applied this to the data and created a new column so that I can easily see whether the game was at home or if it was away.</p>
+<div id="1bf00dbd" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data.rename(columns <span class="op">=</span> {</span>
@@ -761,7 +766,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Introduction</span></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>Having usable, clean data is essential part of the data science process. In this tutorial I will teach some basic data wrangling steps and teach how users how to create a few simple visuals for that data. This blog will help students and other users understand the importance of data wrangling as well as introduce them to single data wrangling steps. I will be using data from the Los Angeles Lakers trying to answer the question of if home court advantage really helps teams win.</span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">### Body</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">### Importing Data</span></span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>The very first thing that we need to do in answering the question of if home court advantage really helps teams win is to get clean and usable data that will show us trends and help us come up with an answer. The data set that I found contains quite a bit of information, such as points scored, field goals made, and free throw percentage. However, in this tutorial we are not interested in those variables. As part of data wrangling we can make the data a whole lot cleaner simply by eliminating the variables that we are not interested in. When reading in data using the "pd.read_csv()" function we can use the built-in feature of "usecols =" to select the columns from the dataset that we are interested in. Here you can see that I selected to use the columns "MATCH UP", "GAME DATE", and "W/L"</span>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd, json</span>
@@ -771,8 +776,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data.head())</span>
 <span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data Wrangling</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>After importing the data I need to do some data wrangling in order to do any anlysis towards the main question. I renamed the columns using the function "data.rename" for simplicity. After renaming the columns it was easier to run it through a function to seperate Home and Away games. To do this I created the "home_away" fuction which goes through the columns and if the designated string is in the value it assigns either "Home" or "Away". I then applied this to the data and created a new column so that I can easily see whether the game was at home or if it was away.</span>
 <span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
 <span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>data.rename(columns <span class="op">=</span> {</span>
 <span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">'MATCH</span><span class="ch">\xa0</span><span class="st">UP'</span> : <span class="st">'Match_Up'</span>,</span>
