@@ -1,0 +1,49 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Your Name - Data Science Portfolio"
+  description: "A showcase of my data science projects and learning journey"
+  
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        href: index.md
+      - text: "Blog"
+        href: Blog.qmd
+      # - text: "About Me"
+      #   href: about.md
+      - text: "Projects"
+        menu:
+          - text: "All Projects"
+            href: docs/index.md
+          - text: "---" 
+          - text: "Exploratory Data Analysis"
+            href: docs/blog.qmd
+          # - text: "Data Acquisition"
+          #   href: docs/data-acquisition.qmd
+          # - text: "Final Project"
+          #   href: docs/final-project.qmd
+    right:
+      - icon: github
+        href: https://github.com/your-username
+      - icon: linkedin
+        href: https://linkedin.com/in/your-profile
+
+  sidebar:
+    - title: "Projects"
+      contents:
+        - docs/index.md
+        - docs/blog.qmd
+        # - docs/data-acquisition.qmd
+        # - docs/final-project.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-fold: true
+    code-tools: true
+    css: styles.css
