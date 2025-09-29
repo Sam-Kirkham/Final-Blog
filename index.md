@@ -1,3 +1,7 @@
-# Project Documentation
+# Intro Data Wrangling and Visualization
 
-Hello World
+### About Me
+
+![Picture of Me](/Users/samkirkham/Downloads/IMG_3403.jpeg)
+
+
