@@ -18,10 +18,10 @@ website:
       - text: "Projects"
         menu:
           - text: "All Projects"
-            href: docs/index.md
+            href: index.md
           - text: "---" 
           - text: "Exploratory Data Analysis"
-            href: docs/blog.qmd
+            href: blog.qmd
           # - text: "Data Acquisition"
           #   href: docs/data-acquisition.qmd
           # - text: "Final Project"
@@ -35,8 +35,8 @@ website:
   sidebar:
     - title: "Projects"
       contents:
-        - docs/index.md
-        - docs/blog.qmd
+        - index.md
+        - blog.qmd
         # - docs/data-acquisition.qmd
         # - docs/final-project.qmd
 
