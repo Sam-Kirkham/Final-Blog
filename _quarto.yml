@@ -10,18 +10,18 @@ website:
     background: primary
     left:
       - text: "Home"
-        href: index.md
+        href: index.html
       - text: "Blog"
-        href: Blog.qmd
+        href: Blog.html
       # - text: "About Me"
       #   href: about.md
       - text: "Projects"
         menu:
           - text: "All Projects"
-            href: index.md
+            href: index.html
           - text: "---" 
           - text: "Exploratory Data Analysis"
-            href: blog.qmd
+            href: blog.html
           # - text: "Data Acquisition"
           #   href: docs/data-acquisition.qmd
           # - text: "Final Project"
