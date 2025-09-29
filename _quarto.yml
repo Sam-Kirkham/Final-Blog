@@ -35,8 +35,8 @@ website:
   sidebar:
     - title: "Projects"
       contents:
-        - index.md
-        - blog.qmd
+        - index.html
+        - blog.html
         # - docs/data-acquisition.qmd
         # - docs/final-project.qmd
 
