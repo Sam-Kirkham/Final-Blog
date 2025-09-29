@@ -12,9 +12,7 @@ website:
       - text: "Home"
         href: index.html
       - text: "Blog"
-        href: Blog.html
-      # - text: "About Me"
-      #   href: about.md
+        href: blog.html
       - text: "Projects"
         menu:
           - text: "All Projects"
@@ -22,10 +20,6 @@ website:
           - text: "---" 
           - text: "Exploratory Data Analysis"
             href: blog.html
-          # - text: "Data Acquisition"
-          #   href: docs/data-acquisition.qmd
-          # - text: "Final Project"
-          #   href: docs/final-project.qmd
     right:
       - icon: github
         href: https://github.com/your-username
@@ -37,8 +31,6 @@ website:
       contents:
         - index.html
         - blog.html
-        # - docs/data-acquisition.qmd
-        # - docs/final-project.qmd
 
 format:
   html:
