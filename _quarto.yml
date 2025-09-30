@@ -23,6 +23,8 @@ website:
     right:
       - icon: github
         href: https://github.com/Sam-Kirkham
+      - icon: linkedin
+        href: https://www.linkedin.com/in/samuel-kirkham-1b3730385/
 
   sidebar:
     - title: "Projects"
