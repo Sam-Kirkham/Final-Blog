@@ -1,6 +1,6 @@
 ## Data Wrangling And Visual
 
-#### Introduction
+### Introduction
 Having usable, clean data is essential part of the data science process. In this tutorial I will teach some basic data wrangling steps and teach how users how to create a few simple visuals for that data. This blog will help students and other users understand the importance of data wrangling as well as introduce them to simple data wrangling steps. I will be using data from the Los Angeles Lakers trying to answer the question of if home court advantage really helps teams win.
 
 ### Importing Data 
@@ -34,7 +34,7 @@ print(data.head())
 ```
 
 ### Data Analysis and Visualization
-After doing some basic data wrangling, I did some simple data analysis and created a visual to help understand the data. Since I am interested in learning whether home court advantage exists for this basketball team I calculated the win percentages at both home and away. So we can see in the code output that the team wins at home 55 percent of the time and wins on the road 41 percent of the time. The visual that I created shows both the wins and losses at home and away so viewers can see the difference and compare.
+After doing some basic data wrangling, I did some simple data analysis and created a visual to help understand the data. Since I am interested in learning whether home court advantage exists for this basketball team I calculated the win percentages at both home and away. So we can see in the code output that the team wins at home 55 percent of the time and wins on the road 41 percent of the time. The visual that I created shows both the wins and losses at home and away so viewers can see the difference and compare. This visual helps us to see quickly that the team does win more games when playing at home and we can see that percentage that we just calculated.
 
 ```{python}
 import matplotlib.pyplot as plt

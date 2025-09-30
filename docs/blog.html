@@ -154,7 +154,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/your-username"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/Sam-Kirkham"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -212,7 +212,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#importing-data" id="toc-importing-data" class="nav-link active" data-scroll-target="#importing-data">Importing Data</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#importing-data" id="toc-importing-data" class="nav-link" data-scroll-target="#importing-data">Importing Data</a></li>
   <li><a href="#data-wrangling" id="toc-data-wrangling" class="nav-link" data-scroll-target="#data-wrangling">Data Wrangling</a></li>
   <li><a href="#data-analysis-and-visualization" id="toc-data-analysis-and-visualization" class="nav-link" data-scroll-target="#data-analysis-and-visualization">Data Analysis and Visualization</a></li>
   <li><a href="#conclusion-and-call-to-action" id="toc-conclusion-and-call-to-action" class="nav-link" data-scroll-target="#conclusion-and-call-to-action">Conclusion and Call to Action</a></li>
@@ -241,14 +242,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="introduction" class="level4">
-<h4 class="anchored" data-anchor-id="introduction">Introduction</h4>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
 <p>Having usable, clean data is essential part of the data science process. In this tutorial I will teach some basic data wrangling steps and teach how users how to create a few simple visuals for that data. This blog will help students and other users understand the importance of data wrangling as well as introduce them to simple data wrangling steps. I will be using data from the Los Angeles Lakers trying to answer the question of if home court advantage really helps teams win.</p>
 </section>
 <section id="importing-data" class="level3">
 <h3 class="anchored" data-anchor-id="importing-data">Importing Data</h3>
 <p>The very first thing that we need to do in answering the question of if home court advantage really helps teams win is to get clean and usable data that will show us trends and help us come up with an answer. The data set that I found contains quite a bit of information, such as points scored, field goals made, and free throw percentage. However, in this tutorial we are not interested in those variables. As part of data wrangling we can make the data a whole lot cleaner simply by eliminating the variables that we are not interested in. When reading in data using the “pd.read_csv()” function we can use the built-in feature of “usecols =” to select the columns from the dataset that we are interested in. Here you can see that I selected to use the columns “MATCH UP”, “GAME DATE”, and “W/L”</p>
-<div id="8a17311b" class="cell" data-execution_count="1">
+<div id="10a153c7" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd, json</span>
@@ -270,7 +271,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="data-wrangling" class="level3">
 <h3 class="anchored" data-anchor-id="data-wrangling">Data Wrangling</h3>
 <p>After importing the data I need to do some data wrangling in order to do any anlysis towards the main question. I renamed the columns using the function “data.rename” for simplicity. After renaming the columns it was easier to run it through a function to seperate Home and Away games. To do this I created the “home_away” fuction which goes through the columns and if the designated string is in the value it assigns either “Home” or “Away”. I then applied this to the data and created a new column so that I can easily see whether the game was at home or if it was away.</p>
-<div id="317726c8" class="cell" data-execution_count="2">
+<div id="28fc9493" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data.rename(columns <span class="op">=</span> {</span>
@@ -301,8 +302,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="data-analysis-and-visualization" class="level3">
 <h3 class="anchored" data-anchor-id="data-analysis-and-visualization">Data Analysis and Visualization</h3>
-<p>After doing some basic data wrangling, I did some simple data analysis and created a visual to help understand the data. Since I am interested in learning whether home court advantage exists for this basketball team I calculated the win percentages at both home and away. So we can see in the code output that the team wins at home 55 percent of the time and wins on the road 41 percent of the time. The visual that I created shows both the wins and losses at home and away so viewers can see the difference and compare.</p>
-<div id="9b76a07e" class="cell" data-execution_count="3">
+<p>After doing some basic data wrangling, I did some simple data analysis and created a visual to help understand the data. Since I am interested in learning whether home court advantage exists for this basketball team I calculated the win percentages at both home and away. So we can see in the code output that the team wins at home 55 percent of the time and wins on the road 41 percent of the time. The visual that I created shows both the wins and losses at home and away so viewers can see the difference and compare. This visual helps us to see quickly that the team does win more games when playing at home and we can see that percentage that we just calculated.</p>
+<div id="cd3b2c01" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -802,7 +803,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Wrangling And Visual</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Introduction</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">### Introduction</span></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>Having usable, clean data is essential part of the data science process. In this tutorial I will teach some basic data wrangling steps and teach how users how to create a few simple visuals for that data. This blog will help students and other users understand the importance of data wrangling as well as introduce them to simple data wrangling steps. I will be using data from the Los Angeles Lakers trying to answer the question of if home court advantage really helps teams win.</span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="fu">### Importing Data </span></span>
@@ -836,7 +837,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data Analysis and Visualization</span></span>
-<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>After doing some basic data wrangling, I did some simple data analysis and created a visual to help understand the data. Since I am interested in learning whether home court advantage exists for this basketball team I calculated the win percentages at both home and away. So we can see in the code output that the team wins at home 55 percent of the time and wins on the road 41 percent of the time. The visual that I created shows both the wins and losses at home and away so viewers can see the difference and compare.</span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>After doing some basic data wrangling, I did some simple data analysis and created a visual to help understand the data. Since I am interested in learning whether home court advantage exists for this basketball team I calculated the win percentages at both home and away. So we can see in the code output that the team wins at home 55 percent of the time and wins on the road 41 percent of the time. The visual that I created shows both the wins and losses at home and away so viewers can see the difference and compare. This visual helps us to see quickly that the team does win more games when playing at home and we can see that percentage that we just calculated.</span>
 <span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
 <span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
