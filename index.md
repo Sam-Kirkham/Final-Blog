@@ -24,7 +24,6 @@ Two things I have loved learning about are data cleaning and visualization. In t
     - Sub comment 1
     - sub comment 2
 <br>
-
 - Sub group
     - Sub group comment 1
 
