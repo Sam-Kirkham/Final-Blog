@@ -9,14 +9,24 @@ Two things I have loved learning about are data cleaning and visualization. In t
 ![Picture of Me](IMG_3403.jpeg)
 
 #### Education
-- Brigham Young University 2023 - 2026
-    - Applied Statistics Major
+- **Brigham Young University**
+    - Majoring in Applied Statistics
+    - Projected Graduation April 2026
 
-- Davis High School Class of 2021
-    - Graduated with High Honors
+- Relevant Course Work
+    - Data Science Process
+    - Predictive Analytics
+    - Applied R Programming
+    - Spreadsheets and Business Analysis
 
 #### Experience
+- Main group
+    - Sub comment 1
+    - sub comment 2
+<br>
 
+- Sub group
+    - Sub group comment 1
 
 #### Skills
 - **Coding Languages**
