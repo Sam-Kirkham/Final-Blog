@@ -1,6 +1,4 @@
-# Intro Data Wrangling and Visualization
-
-### About Me
+# About Me
 #### Introduction
 Hi! My name is Sam Kirkham, I am a statistics major at BYU! A few things about me: I am from Kaysville Ut, I love the outdoors, and I love anything and everything sports. I love watching basketball and football and love working on data for both of these sports as well.
 
