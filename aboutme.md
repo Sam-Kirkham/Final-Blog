@@ -22,6 +22,12 @@
     - Lead groups of 14 - 18 youth in summer camp activities
     - Teach short lessons to small groups
 
+- **Projects**
+    - Amazon Acess 
+        - I am currently working on different models to see how accurately I can predict who gets access in Amazon's system
+    - NBA 2024 Draft Picks
+        - I did some initial EDA and modeling to notice any trends in player stats that would help predict which players would be drafted
+
 #### Skills
 - **Coding Languages**
     -  R
