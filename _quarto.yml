@@ -17,9 +17,11 @@ website:
         href: blog.qmd
       - text: "Projects"
         menu:
-          - text: "All Projects"
+          - text: "Home"
             href: index.md
           - text: "---" 
+          - text: "About Me"
+            href: aboutme.md
           - text: "Data Wrangling ang Visualization"
             href: blog.qmd
     right:
