@@ -1,7 +1,7 @@
 # About Me
 
 ![Picture of Me](IMG_3403.jpeg)
-
+ 
 #### Education
 - **Brigham Young University**
     - Majoring in Applied Statistics
