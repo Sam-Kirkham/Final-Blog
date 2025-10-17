@@ -11,6 +11,8 @@ website:
     left:
       - text: "Home"
         href: index.md
+      - text: "About Me"
+        href: aboutme.md
       - text: "Blog"
         href: blog.qmd
       - text: "Projects"
@@ -31,6 +33,7 @@ website:
     - title: "Projects"
       contents:
         - index.md
+        - aboutme.md
         - blog.qmd
 
 format:
