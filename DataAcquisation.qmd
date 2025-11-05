@@ -1,0 +1,10 @@
+```{python}
+import pandas as pd, json
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import re
+
+df = pd.read_csv('BettingLinesFinal.csv')
+df.head()
+```

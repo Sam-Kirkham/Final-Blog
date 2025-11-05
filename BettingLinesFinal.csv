@@ -1,0 +1,252 @@
+HomeTeam,HomeScore,AwayTeam,AwayScore,LineProvider,OverUnder,Year,NormalizedSpread,BYU_Diff,TotalScore,Home,Cover,Over/Under,Win,Favored
+BYU,45.0,Louisiana Tech,14.0,teamrankings,61.5,2020,24.0,31.0,59.0,True,True,-2.5,True,True
+BYU,45.0,Louisiana Tech,14.0,numberfire,60.5,2020,24.5,31.0,59.0,True,True,-1.5,True,True
+BYU,45.0,Louisiana Tech,14.0,consensus,61.0,2020,24.0,31.0,59.0,True,True,-2.0,True,True
+BYU,45.0,Louisiana Tech,14.0,Caesars,61.0,2020,24.0,31.0,59.0,True,True,-2.0,True,True
+BYU,45.0,Louisiana Tech,14.0,Bovada,62.0,2020,24.0,31.0,59.0,True,True,-3.0,True,True
+BYU,48.0,Troy,7.0,Bovada,59.0,2020,14.5,41.0,55.0,True,True,-4.0,True,True
+BYU,48.0,Troy,7.0,teamrankings,58.5,2020,14.5,41.0,55.0,True,True,-3.5,True,True
+BYU,48.0,Troy,7.0,numberfire,58.5,2020,14.5,41.0,55.0,True,True,-3.5,True,True
+BYU,48.0,Troy,7.0,consensus,58.5,2020,14.5,41.0,55.0,True,True,-3.5,True,True
+BYU,48.0,Troy,7.0,Caesars,58.5,2020,14.5,41.0,55.0,True,True,-3.5,True,True
+BYU,27.0,UTSA,20.0,teamrankings,63.5,2020,34.0,7.0,47.0,True,False,-16.5,True,True
+BYU,27.0,UTSA,20.0,numberfire,63.5,2020,34.5,7.0,47.0,True,False,-16.5,True,True
+BYU,27.0,UTSA,20.0,consensus,63.0,2020,34.0,7.0,47.0,True,False,-16.0,True,True
+BYU,27.0,UTSA,20.0,Caesars,63.5,2020,34.0,7.0,47.0,True,False,-16.5,True,True
+BYU,66.0,North Alabama,14.0,consensus,63.0,2020,50.0,52.0,80.0,True,True,17.0,True,True
+Houston,26.0,BYU,43.0,teamrankings,62.0,2020,3.0,17.0,69.0,False,True,7.0,True,True
+Houston,26.0,BYU,43.0,numberfire,62.5,2020,3.5,17.0,69.0,False,True,6.5,True,True
+Houston,26.0,BYU,43.0,consensus,62.5,2020,3.0,17.0,69.0,False,True,6.5,True,True
+Houston,26.0,BYU,43.0,SugarHouse,62.5,2020,3.5,17.0,69.0,False,True,6.5,True,True
+Houston,26.0,BYU,43.0,Caesars,62.0,2020,3.0,17.0,69.0,False,True,7.0,True,True
+Navy,3.0,BYU,55.0,teamrankings,48.5,2020,1.0,52.0,58.0,False,True,9.5,True,True
+Navy,3.0,BYU,55.0,numberfire,48.5,2020,1.5,52.0,58.0,False,True,9.5,True,True
+Navy,3.0,BYU,55.0,consensus,48.5,2020,1.0,52.0,58.0,False,True,9.5,True,True
+Navy,3.0,BYU,55.0,Caesars,48.0,2020,1.5,52.0,58.0,False,True,10.0,True,True
+Navy,3.0,BYU,55.0,Bovada,48.0,2020,1.0,52.0,58.0,False,True,10.0,True,True
+BYU,52.0,Texas State,14.0,Bovada,61.5,2020,30.5,38.0,66.0,True,True,4.5,True,True
+BYU,52.0,Texas State,14.0,teamrankings,62.0,2020,30.0,38.0,66.0,True,True,4.0,True,True
+BYU,52.0,Texas State,14.0,numberfire,62.5,2020,29.5,38.0,66.0,True,True,3.5,True,True
+BYU,52.0,Texas State,14.0,consensus,61.5,2020,30.0,38.0,66.0,True,True,4.5,True,True
+BYU,52.0,Texas State,14.0,SugarHouse,61.5,2020,29.0,38.0,66.0,True,True,4.5,True,True
+BYU,52.0,Texas State,14.0,Caesars,62.0,2020,30.0,38.0,66.0,True,True,4.0,True,True
+BYU,41.0,Western Kentucky,10.0,teamrankings,52.0,2020,30.5,31.0,51.0,True,True,-1.0,True,True
+BYU,41.0,Western Kentucky,10.0,numberfire,52.5,2020,30.5,31.0,51.0,True,True,-1.5,True,True
+BYU,41.0,Western Kentucky,10.0,consensus,52.5,2020,31.0,31.0,51.0,True,False,-1.5,True,True
+BYU,41.0,Western Kentucky,10.0,SugarHouse,52.5,2020,30.5,31.0,51.0,True,True,-1.5,True,True
+BYU,41.0,Western Kentucky,10.0,Caesars,52.0,2020,31.0,31.0,51.0,True,False,-1.0,True,True
+BYU,41.0,Western Kentucky,10.0,Bovada,,2020,28.5,31.0,51.0,True,True,,True,True
+Boise State,17.0,BYU,51.0,teamrankings,62.5,2020,4.0,34.0,68.0,False,True,5.5,True,True
+Boise State,17.0,BYU,51.0,numberfire,63.5,2020,4.5,34.0,68.0,False,True,4.5,True,True
+Boise State,17.0,BYU,51.0,consensus,62.5,2020,4.5,34.0,68.0,False,True,5.5,True,True
+Boise State,17.0,BYU,51.0,Caesars,62.5,2020,5.0,34.0,68.0,False,True,5.5,True,True
+Boise State,17.0,BYU,51.0,Bovada,59.0,2020,3.0,34.0,68.0,False,True,9.0,True,True
+Coastal Carolina,22.0,BYU,17.0,Bovada,53.5,2020,-11.0,-5.0,39.0,False,True,-14.5,False,False
+Coastal Carolina,22.0,BYU,17.0,teamrankings,63.0,2020,10.0,-5.0,39.0,False,False,-24.0,False,True
+Coastal Carolina,22.0,BYU,17.0,numberfire,62.5,2020,10.5,-5.0,39.0,False,False,-23.5,False,True
+Coastal Carolina,22.0,BYU,17.0,consensus,62.5,2020,10.5,-5.0,39.0,False,False,-23.5,False,True
+Coastal Carolina,22.0,BYU,17.0,Caesars,62.5,2020,10.5,-5.0,39.0,False,False,-23.5,False,True
+BYU,28.0,San Diego State,14.0,Bovada,47.5,2020,17.0,14.0,42.0,True,False,-5.5,True,True
+BYU,28.0,San Diego State,14.0,teamrankings,47.0,2020,16.5,14.0,42.0,True,False,-5.0,True,True
+BYU,28.0,San Diego State,14.0,numberfire,47.5,2020,16.5,14.0,42.0,True,False,-5.5,True,True
+BYU,28.0,San Diego State,14.0,consensus,47.5,2020,16.5,14.0,42.0,True,False,-5.5,True,True
+BYU,28.0,San Diego State,14.0,William Hill (New Jersey),47.5,2020,16.5,14.0,42.0,True,False,-5.5,True,True
+BYU,49.0,UCF,23.0,teamrankings,79.0,2020,6.0,26.0,72.0,True,True,-7.0,True,True
+BYU,49.0,UCF,23.0,numberfire,79.5,2020,6.5,26.0,72.0,True,True,-7.5,True,True
+BYU,49.0,UCF,23.0,consensus,80.0,2020,6.0,26.0,72.0,True,True,-8.0,True,True
+BYU,49.0,UCF,23.0,William Hill (New Jersey),79.5,2020,6.0,26.0,72.0,True,True,-7.5,True,True
+BYU,66.0,Virginia,49.0,Bovada,66.0,2021,2.5,17.0,115.0,True,True,49.0,True,True
+BYU,66.0,Virginia,49.0,teamrankings,66.5,2021,2.5,17.0,115.0,True,True,48.5,True,True
+BYU,66.0,Virginia,49.0,consensus,66.5,2021,2.5,17.0,115.0,True,True,48.5,True,True
+BYU,66.0,Virginia,49.0,William Hill (New Jersey),67.0,2021,2.0,17.0,115.0,True,True,48.0,True,True
+BYU,17.0,Boise State,26.0,teamrankings,58.0,2021,6.0,-9.0,43.0,True,False,-15.0,False,True
+BYU,17.0,Boise State,26.0,consensus,58.0,2021,6.0,-9.0,43.0,True,False,-15.0,False,True
+BYU,17.0,Boise State,26.0,William Hill (New Jersey),58.0,2021,6.0,-9.0,43.0,True,False,-15.0,False,True
+BYU,17.0,Boise State,26.0,Bovada,57.5,2021,6.5,-9.0,43.0,True,False,-14.5,False,True
+BYU,28.0,UAB,31.0,Bovada,54.5,2021,7.0,-3.0,59.0,True,False,4.5,False,True
+BYU,28.0,UAB,31.0,teamrankings,54.5,2021,5.5,-3.0,59.0,True,False,4.5,False,True
+BYU,28.0,UAB,31.0,consensus,54.0,2021,6.0,-3.0,59.0,True,False,5.0,False,True
+BYU,28.0,UAB,31.0,William Hill (New Jersey),54.0,2021,6.0,-3.0,59.0,True,False,5.0,False,True
+Utah State,20.0,BYU,34.0,teamrankings,66.0,2021,9.0,14.0,54.0,False,True,-12.0,True,True
+Utah State,20.0,BYU,34.0,consensus,65.5,2021,8.0,14.0,54.0,False,True,-11.5,True,True
+Utah State,20.0,BYU,34.0,William Hill (New Jersey),65.5,2021,8.0,14.0,54.0,False,True,-11.5,True,True
+Utah State,20.0,BYU,34.0,Bovada,66.0,2021,9.0,14.0,54.0,False,True,-12.0,True,True
+Georgia Southern,17.0,BYU,34.0,teamrankings,57.0,2021,20.0,17.0,51.0,False,False,-6.0,True,True
+Georgia Southern,17.0,BYU,34.0,consensus,57.5,2021,20.0,17.0,51.0,False,False,-6.5,True,True
+Georgia Southern,17.0,BYU,34.0,William Hill (New Jersey),57.0,2021,20.0,17.0,51.0,False,False,-6.0,True,True
+Georgia Southern,17.0,BYU,34.0,Bovada,57.5,2021,20.0,17.0,51.0,False,False,-6.5,True,True
+USC,31.0,BYU,35.0,teamrankings,65.5,2021,8.5,4.0,66.0,False,False,0.5,True,True
+USC,31.0,BYU,35.0,consensus,65.5,2021,8.5,4.0,66.0,False,False,0.5,True,True
+USC,31.0,BYU,35.0,William Hill (New Jersey),65.5,2021,8.5,4.0,66.0,False,False,0.5,True,True
+USC,31.0,BYU,35.0,Bovada,65.0,2021,7.0,4.0,66.0,False,False,1.0,True,True
+Baylor,38.0,BYU,24.0,teamrankings,52.5,2021,-5.5,-14.0,62.0,False,False,9.5,False,False
+Baylor,38.0,BYU,24.0,consensus,52.5,2021,-5.5,-14.0,62.0,False,False,9.5,False,False
+Baylor,38.0,BYU,24.0,William Hill (New Jersey),52.5,2021,-5.5,-14.0,62.0,False,False,9.5,False,False
+Baylor,38.0,BYU,24.0,Bovada,52.0,2021,-5.0,-14.0,62.0,False,False,10.0,False,False
+Washington State,19.0,BYU,21.0,Bovada,56.5,2021,4.0,2.0,40.0,False,False,-16.5,True,True
+Washington State,19.0,BYU,21.0,teamrankings,56.5,2021,3.5,2.0,40.0,False,False,-16.5,True,True
+Washington State,19.0,BYU,21.0,consensus,56.5,2021,3.5,2.0,40.0,False,False,-16.5,True,True
+Washington State,19.0,BYU,21.0,William Hill (New Jersey),56.5,2021,3.5,2.0,40.0,False,False,-16.5,True,True
+Arizona,16.0,BYU,24.0,Bovada,53.5,2021,12.5,8.0,40.0,False,False,-13.5,True,True
+Arizona,16.0,BYU,24.0,teamrankings,54.0,2021,13.5,8.0,40.0,False,False,-14.0,True,True
+Arizona,16.0,BYU,24.0,numberfire,53.5,2021,13.5,8.0,40.0,False,False,-13.5,True,True
+Arizona,16.0,BYU,24.0,consensus,54.0,2021,13.5,8.0,40.0,False,False,-14.0,True,True
+Arizona,16.0,BYU,24.0,William Hill (New Jersey),54.0,2021,13.5,8.0,40.0,False,False,-14.0,True,True
+BYU,26.0,Utah,17.0,teamrankings,50.0,2021,-7.0,9.0,43.0,True,True,-7.0,True,False
+BYU,26.0,Utah,17.0,numberfire,49.5,2021,-7.5,9.0,43.0,True,True,-6.5,True,False
+BYU,26.0,Utah,17.0,consensus,50.5,2021,-7.0,9.0,43.0,True,True,-7.5,True,False
+BYU,26.0,Utah,17.0,William Hill (New Jersey),50.5,2021,-7.0,9.0,43.0,True,True,-7.5,True,False
+BYU,26.0,Utah,17.0,Bovada,49.5,2021,-7.0,9.0,43.0,True,True,-6.5,True,False
+BYU,59.0,Idaho State,14.0,consensus,55.0,2021,36.5,45.0,73.0,True,True,18.0,True,True
+BYU,59.0,Idaho State,14.0,William Hill (New Jersey),55.0,2021,36.5,45.0,73.0,True,True,18.0,True,True
+BYU,59.0,Idaho State,14.0,Bovada,55.0,2021,36.0,45.0,73.0,True,True,18.0,True,True
+BYU,35.0,South Florida,27.0,Bovada,54.0,2021,23.5,8.0,62.0,True,False,8.0,True,True
+BYU,35.0,South Florida,27.0,teamrankings,54.5,2021,23.5,8.0,62.0,True,False,7.5,True,True
+BYU,35.0,South Florida,27.0,consensus,54.5,2021,23.5,8.0,62.0,True,False,7.5,True,True
+BYU,35.0,South Florida,27.0,William Hill (New Jersey),54.5,2021,24.0,8.0,62.0,True,False,7.5,True,True
+BYU,27.0,Arizona State,17.0,teamrankings,50.5,2021,-3.5,10.0,44.0,True,True,-6.5,True,False
+BYU,27.0,Arizona State,17.0,numberfire,51.5,2021,-3.5,10.0,44.0,True,True,-7.5,True,False
+BYU,27.0,Arizona State,17.0,consensus,50.5,2021,-3.0,10.0,44.0,True,True,-6.5,True,False
+BYU,27.0,Arizona State,17.0,William Hill (New Jersey),50.5,2021,-3.0,10.0,44.0,True,True,-6.5,True,False
+BYU,27.0,Arizona State,17.0,Bovada,50.5,2021,-3.5,10.0,44.0,True,True,-6.5,True,False
+BYU,24.0,East Carolina,27.0,teamrankings,64.0,2022,3.0,-3.0,51.0,True,False,-13.0,False,True
+BYU,24.0,East Carolina,27.0,consensus,64.0,2022,3.5,-3.0,51.0,True,False,-13.0,False,True
+BYU,24.0,East Carolina,27.0,William Hill (New Jersey),64.0,2022,3.0,-3.0,51.0,True,False,-13.0,False,True
+BYU,24.0,East Carolina,27.0,Bovada,64.0,2022,3.0,-3.0,51.0,True,False,-13.0,False,True
+Stanford,26.0,BYU,35.0,Bovada,58.0,2022,6.5,9.0,61.0,False,True,3.0,True,True
+Stanford,26.0,BYU,35.0,teamrankings,57.5,2022,6.0,9.0,61.0,False,True,3.5,True,True
+Stanford,26.0,BYU,35.0,consensus,57.5,2022,6.5,9.0,61.0,False,True,3.5,True,True
+Stanford,26.0,BYU,35.0,William Hill (New Jersey),57.5,2022,6.5,9.0,61.0,False,True,3.5,True,True
+Oregon,41.0,BYU,20.0,Bovada,58.0,2022,-4.0,-21.0,61.0,False,False,3.0,False,False
+Oregon,41.0,BYU,20.0,teamrankings,58.0,2022,-3.5,-21.0,61.0,False,False,3.0,False,False
+Oregon,41.0,BYU,20.0,consensus,57.5,2022,-3.5,-21.0,61.0,False,False,3.5,False,False
+Oregon,41.0,BYU,20.0,William Hill (New Jersey),58.0,2022,-3.5,-21.0,61.0,False,False,3.0,False,False
+South Florida,21.0,BYU,50.0,Bovada,57.5,2022,12.5,29.0,71.0,False,True,13.5,True,True
+South Florida,21.0,BYU,50.0,teamrankings,58.5,2022,11.0,29.0,71.0,False,True,12.5,True,True
+South Florida,21.0,BYU,50.0,consensus,58.5,2022,11.5,29.0,71.0,False,True,12.5,True,True
+South Florida,21.0,BYU,50.0,William Hill (New Jersey),58.5,2022,11.5,29.0,71.0,False,True,12.5,True,True
+Liberty,41.0,BYU,14.0,Bovada,58.0,2022,7.0,-27.0,55.0,False,False,-3.0,False,True
+Liberty,41.0,BYU,14.0,teamrankings,58.0,2022,7.0,-27.0,55.0,False,False,-3.0,False,True
+Liberty,41.0,BYU,14.0,consensus,58.0,2022,7.0,-27.0,55.0,False,False,-3.0,False,True
+Liberty,41.0,BYU,14.0,William Hill (New Jersey),58.0,2022,7.0,-27.0,55.0,False,False,-3.0,False,True
+Notre Dame,28.0,BYU,20.0,Bovada,51.5,2022,-3.5,-8.0,48.0,False,False,-3.5,False,False
+Notre Dame,28.0,BYU,20.0,teamrankings,51.0,2022,-4.0,-8.0,48.0,False,False,-3.0,False,False
+Notre Dame,28.0,BYU,20.0,consensus,51.5,2022,-3.5,-8.0,48.0,False,False,-3.5,False,False
+Notre Dame,28.0,BYU,20.0,William Hill (New Jersey),51.5,2022,-3.5,-8.0,48.0,False,False,-3.5,False,False
+Boise State,28.0,BYU,31.0,Bovada,54.0,2022,-9.0,3.0,59.0,False,True,5.0,True,False
+Boise State,28.0,BYU,31.0,teamrankings,54.5,2022,-9.5,3.0,59.0,False,True,4.5,True,False
+Boise State,28.0,BYU,31.0,consensus,54.5,2022,-9.5,3.0,59.0,False,True,4.5,True,False
+Boise State,28.0,BYU,31.0,William Hill (New Jersey),54.5,2022,-9.5,3.0,59.0,False,True,4.5,True,False
+BYU,26.0,Baylor,20.0,Bovada,55.0,2022,2.5,6.0,46.0,True,True,-9.0,True,True
+BYU,26.0,Baylor,20.0,teamrankings,54.5,2022,2.5,6.0,46.0,True,True,-8.5,True,True
+BYU,26.0,Baylor,20.0,consensus,55.0,2022,2.5,6.0,46.0,True,True,-9.0,True,True
+BYU,26.0,Baylor,20.0,William Hill (New Jersey),55.0,2022,2.5,6.0,46.0,True,True,-9.0,True,True
+BYU,38.0,Wyoming,24.0,Bovada,49.0,2022,21.0,14.0,62.0,True,False,13.0,True,True
+BYU,38.0,Wyoming,24.0,teamrankings,50.0,2022,21.5,14.0,62.0,True,False,12.0,True,True
+BYU,38.0,Wyoming,24.0,consensus,49.5,2022,21.5,14.0,62.0,True,False,12.5,True,True
+BYU,38.0,Wyoming,24.0,William Hill (New Jersey),50.0,2022,21.0,14.0,62.0,True,False,12.0,True,True
+BYU,38.0,Utah State,26.0,Bovada,60.0,2022,26.0,12.0,64.0,True,False,4.0,True,True
+BYU,38.0,Utah State,26.0,teamrankings,60.0,2022,26.0,12.0,64.0,True,False,4.0,True,True
+BYU,38.0,Utah State,26.0,consensus,60.0,2022,26.0,12.0,64.0,True,False,4.0,True,True
+BYU,38.0,Utah State,26.0,William Hill (New Jersey),60.0,2022,26.0,12.0,64.0,True,False,4.0,True,True
+BYU,35.0,Arkansas,52.0,Bovada,67.0,2022,-0.0,-17.0,87.0,True,False,20.0,False,False
+BYU,35.0,Arkansas,52.0,teamrankings,66.5,2022,1.0,-17.0,87.0,True,False,20.5,False,True
+BYU,35.0,Arkansas,52.0,consensus,66.5,2022,1.0,-17.0,87.0,True,False,20.5,False,True
+BYU,35.0,Arkansas,52.0,William Hill (New Jersey),66.5,2022,1.0,-17.0,87.0,True,False,20.5,False,True
+BYU,24.0,SMU,23.0,Bovada,65.0,2022,-4.5,1.0,47.0,True,True,-18.0,True,False
+BYU,24.0,SMU,23.0,teamrankings,65.0,2022,-4.5,1.0,47.0,True,True,-18.0,True,False
+BYU,24.0,SMU,23.0,consensus,65.0,2022,-4.5,1.0,47.0,True,True,-18.0,True,False
+BYU,24.0,SMU,23.0,William Hill (New Jersey),65.0,2022,-4.5,1.0,47.0,True,True,-18.0,True,False
+BYU,14.0,Sam Houston,0.0,DraftKings,46.5,2023,20.0,14.0,14.0,True,False,-32.5,True,True
+BYU,14.0,Sam Houston,0.0,Bovada,46.5,2023,20.0,14.0,14.0,True,False,-32.5,True,True
+BYU,14.0,Sam Houston,0.0,teamrankings,50.5,2023,22.5,14.0,14.0,True,False,-36.5,True,True
+BYU,14.0,Sam Houston,0.0,William Hill (New Jersey),46.5,2023,19.0,14.0,14.0,True,False,-32.5,True,True
+BYU,13.0,Iowa State,45.0,Bovada,41.5,2023,-7.5,-32.0,58.0,True,False,16.5,False,False
+BYU,13.0,Iowa State,45.0,DraftKings,43.0,2023,-7.0,-32.0,58.0,True,False,15.0,False,False
+BYU,13.0,Iowa State,45.0,ESPN Bet,40.5,2023,-7.5,-32.0,58.0,True,False,17.5,False,False
+BYU,24.0,Oklahoma,31.0,DraftKings,57.0,2023,-24.0,-7.0,55.0,True,True,-2.0,False,False
+BYU,24.0,Oklahoma,31.0,Bovada,58.5,2023,-24.5,-7.0,55.0,True,True,-3.5,False,False
+BYU,24.0,Oklahoma,31.0,ESPN Bet,58.5,2023,-24.5,-7.0,55.0,True,True,-3.5,False,False
+BYU,27.0,Texas Tech,14.0,Bovada,50.0,2023,-3.0,13.0,41.0,True,True,-9.0,True,False
+BYU,27.0,Texas Tech,14.0,DraftKings,51.0,2023,-3.0,13.0,41.0,True,True,-10.0,True,False
+BYU,27.0,Texas Tech,14.0,William Hill (New Jersey),49.0,2023,-3.0,13.0,41.0,True,True,-8.0,True,False
+Arkansas,31.0,BYU,38.0,Bovada,47.5,2023,-7.5,7.0,69.0,False,True,21.5,True,False
+Arkansas,31.0,BYU,38.0,William Hill (New Jersey),48.0,2023,-9.0,7.0,69.0,False,True,21.0,True,False
+BYU,41.0,Southern Utah,16.0,DraftKings,49.5,2023,31.0,25.0,57.0,True,False,7.5,True,True
+BYU,41.0,Southern Utah,16.0,William Hill (New Jersey),46.5,2023,30.5,25.0,57.0,True,False,10.5,True,True
+BYU,35.0,Cincinnati,27.0,DraftKings,50.5,2023,-2.0,8.0,62.0,True,True,11.5,True,False
+BYU,35.0,Cincinnati,27.0,Bovada,48.0,2023,2.5,8.0,62.0,True,True,14.0,True,True
+BYU,35.0,Cincinnati,27.0,William Hill (New Jersey),47.5,2023,1.0,8.0,62.0,True,True,14.5,True,True
+West Virginia,37.0,BYU,7.0,ESPN Bet,47.5,2023,-12.5,-30.0,44.0,False,False,-3.5,False,False
+West Virginia,37.0,BYU,7.0,Bovada,49.0,2023,-12.5,-30.0,44.0,False,False,-5.0,False,False
+West Virginia,37.0,BYU,7.0,DraftKings,48.5,2023,-13.0,-30.0,44.0,False,False,-4.5,False,False
+Texas,35.0,BYU,6.0,Bovada,49.5,2023,-20.5,-29.0,41.0,False,False,-8.5,False,False
+Texas,35.0,BYU,6.0,DraftKings,50.0,2023,-18.5,-29.0,41.0,False,False,-9.0,False,False
+Texas,35.0,BYU,6.0,William Hill (New Jersey),48.5,2023,-20.5,-29.0,41.0,False,False,-7.5,False,False
+TCU,44.0,BYU,11.0,DraftKings,52.5,2023,-5.0,-33.0,55.0,False,False,2.5,False,False
+TCU,44.0,BYU,11.0,Bovada,53.5,2023,-5.0,-33.0,55.0,False,False,1.5,False,False
+TCU,44.0,BYU,11.0,William Hill (New Jersey),52.5,2023,-5.0,-33.0,55.0,False,False,2.5,False,False
+Oklahoma State,40.0,BYU,34.0,DraftKings,,2023,-17.5,-6.0,74.0,False,True,,False,False
+Oklahoma State,40.0,BYU,34.0,ESPN Bet,54.5,2023,-16.5,-6.0,74.0,False,True,19.5,False,False
+Oklahoma State,40.0,BYU,34.0,Bovada,55.5,2023,-15.5,-6.0,74.0,False,True,18.5,False,False
+Kansas,38.0,BYU,27.0,Bovada,54.5,2023,-9.5,-11.0,65.0,False,False,10.5,False,False
+Kansas,38.0,BYU,27.0,DraftKings,54.5,2023,-9.5,-11.0,65.0,False,False,10.5,False,False
+Kansas,38.0,BYU,27.0,William Hill (New Jersey),55.5,2023,-9.0,-11.0,65.0,False,False,9.5,False,False
+BYU,38.0,Oklahoma State,35.0,DraftKings,53.0,2024,8.5,3.0,73.0,True,False,20.0,True,True
+BYU,38.0,Oklahoma State,35.0,Bovada,53.0,2024,8.5,3.0,73.0,True,False,20.0,True,True
+BYU,38.0,Oklahoma State,35.0,ESPN Bet,52.5,2024,7.5,3.0,73.0,True,False,20.5,True,True
+BYU,38.0,Kansas State,9.0,DraftKings,49.5,2024,-7.5,29.0,47.0,True,True,-2.5,True,False
+BYU,38.0,Kansas State,9.0,Bovada,49.5,2024,-7.0,29.0,47.0,True,True,-2.5,True,False
+BYU,38.0,Kansas State,9.0,ESPN Bet,48.5,2024,-7.5,29.0,47.0,True,True,-1.5,True,False
+Wyoming,14.0,BYU,34.0,ESPN Bet,40.5,2024,9.5,20.0,48.0,False,True,7.5,True,True
+Wyoming,14.0,BYU,34.0,Bovada,39.5,2024,9.5,20.0,48.0,False,True,8.5,True,True
+Wyoming,14.0,BYU,34.0,DraftKings,39.5,2024,10.0,20.0,48.0,False,True,8.5,True,True
+Colorado,14.0,BYU,36.0,DraftKings,55.5,2024,-3.0,22.0,50.0,False,True,-5.5,True,False
+Colorado,14.0,BYU,36.0,ESPN Bet,53.5,2024,-2.5,22.0,50.0,False,True,-3.5,True,False
+Colorado,14.0,BYU,36.0,Bovada,55.5,2024,-3.0,22.0,50.0,False,True,-5.5,True,False
+BYU,41.0,Arizona,19.0,DraftKings,48.5,2024,3.0,22.0,60.0,True,True,11.5,True,True
+BYU,41.0,Arizona,19.0,Bovada,48.5,2024,2.5,22.0,60.0,True,True,11.5,True,True
+BYU,41.0,Arizona,19.0,ESPN Bet,48.5,2024,2.5,22.0,60.0,True,True,11.5,True,True
+Baylor,28.0,BYU,34.0,DraftKings,47.0,2024,-3.0,6.0,62.0,False,True,15.0,True,False
+Baylor,28.0,BYU,34.0,ESPN Bet,46.5,2024,-3.5,6.0,62.0,False,True,15.5,True,False
+Baylor,28.0,BYU,34.0,Bovada,46.5,2024,-3.0,6.0,62.0,False,True,15.5,True,False
+UCF,24.0,BYU,37.0,Bovada,53.5,2024,-2.5,13.0,61.0,False,True,7.5,True,False
+UCF,24.0,BYU,37.0,ESPN Bet,53.5,2024,-2.5,13.0,61.0,False,True,7.5,True,False
+UCF,24.0,BYU,37.0,DraftKings,53.5,2024,-2.5,13.0,61.0,False,True,7.5,True,False
+Utah,21.0,BYU,22.0,ESPN Bet,40.5,2024,3.5,1.0,43.0,False,False,2.5,True,True
+Utah,21.0,BYU,22.0,DraftKings,40.5,2024,3.0,1.0,43.0,False,False,2.5,True,True
+Utah,21.0,BYU,22.0,Bovada,40.5,2024,3.0,1.0,43.0,False,False,2.5,True,True
+BYU,13.0,Kansas,17.0,DraftKings,55.5,2024,3.0,-4.0,30.0,True,False,-25.5,False,True
+BYU,13.0,Kansas,17.0,Bovada,56.5,2024,2.0,-4.0,30.0,True,False,-26.5,False,True
+BYU,13.0,Kansas,17.0,ESPN Bet,55.5,2024,2.5,-4.0,30.0,True,False,-25.5,False,True
+Arizona State,28.0,BYU,23.0,DraftKings,49.0,2024,-3.5,-5.0,51.0,False,False,2.0,False,False
+Arizona State,28.0,BYU,23.0,Bovada,48.5,2024,-3.5,-5.0,51.0,False,False,2.5,False,False
+Arizona State,28.0,BYU,23.0,ESPN Bet,48.5,2024,-3.5,-5.0,51.0,False,False,2.5,False,False
+BYU,30.0,Houston,18.0,Bovada,40.5,2024,12.0,12.0,48.0,True,False,7.5,True,True
+BYU,30.0,Houston,18.0,ESPN Bet,39.5,2024,9.5,12.0,48.0,True,True,8.5,True,True
+BYU,30.0,Houston,18.0,DraftKings,40.5,2024,12.5,12.0,48.0,True,False,7.5,True,True
+SMU,15.0,BYU,18.0,ESPN Bet,55.5,2024,-12.5,3.0,33.0,False,True,-22.5,True,False
+SMU,15.0,BYU,18.0,DraftKings,56.0,2024,-11.5,3.0,33.0,False,True,-23.0,True,False
+SMU,15.0,BYU,18.0,Bovada,56.0,2024,-13.0,3.0,33.0,False,True,-23.0,True,False
+BYU,27.0,Stanford,3.0,Bovada,44.5,2025,20.5,24.0,30.0,True,True,-14.5,True,True
+BYU,27.0,Stanford,3.0,ESPN Bet,43.5,2025,20.5,24.0,30.0,True,True,-13.5,True,True
+Iowa State,27.0,BYU,41.0,DraftKings,48.5,2025,-2.5,14.0,68.0,False,True,19.5,True,False
+Iowa State,27.0,BYU,41.0,ESPN Bet,49.5,2025,-2.5,14.0,68.0,False,True,18.5,True,False
+Iowa State,27.0,BYU,41.0,Bovada,49.0,2025,-2.5,14.0,68.0,False,True,19.0,True,False
+BYU,69.0,Portland State,0.0,Bovada,61.5,2025,43.5,69.0,69.0,True,True,7.5,True,True
+BYU,69.0,Portland State,0.0,ESPN Bet,62.5,2025,44.5,69.0,69.0,True,True,6.5,True,True
+BYU,38.0,West Virginia,24.0,ESPN Bet,46.5,2025,19.5,14.0,62.0,True,False,15.5,True,True
+BYU,38.0,West Virginia,24.0,DraftKings,46.5,2025,19.5,14.0,62.0,True,False,15.5,True,True
+BYU,38.0,West Virginia,24.0,Bovada,47.0,2025,20.0,14.0,62.0,True,False,15.0,True,True
+Colorado,21.0,BYU,24.0,DraftKings,48.5,2025,6.5,3.0,45.0,False,False,-3.5,True,True
+Colorado,21.0,BYU,24.0,Bovada,49.0,2025,6.5,3.0,45.0,False,False,-4.0,True,True
+Colorado,21.0,BYU,24.0,ESPN Bet,48.5,2025,6.5,3.0,45.0,False,False,-3.5,True,True
+Arizona,27.0,BYU,33.0,DraftKings,46.5,2025,2.5,6.0,60.0,False,True,13.5,True,True
+Arizona,27.0,BYU,33.0,Bovada,47.0,2025,2.5,6.0,60.0,False,True,13.0,True,True
+Arizona,27.0,BYU,33.0,ESPN Bet,46.5,2025,2.5,6.0,60.0,False,True,13.5,True,True
+East Carolina,13.0,BYU,34.0,DraftKings,49.5,2025,6.5,21.0,47.0,False,True,-2.5,True,True
+East Carolina,13.0,BYU,34.0,Bovada,50.0,2025,6.5,21.0,47.0,False,True,-3.0,True,True
+East Carolina,13.0,BYU,34.0,ESPN Bet,49.5,2025,5.5,21.0,47.0,False,True,-2.5,True,True
+BYU,24.0,Utah,21.0,DraftKings,49.5,2025,-4.0,3.0,45.0,True,True,-4.5,True,False
+BYU,24.0,Utah,21.0,Bovada,49.5,2025,-4.0,3.0,45.0,True,True,-4.5,True,False
+BYU,24.0,Utah,21.0,ESPN Bet,49.5,2025,-5.5,3.0,45.0,True,True,-4.5,True,False
