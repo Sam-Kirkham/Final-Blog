@@ -16,7 +16,7 @@ website:
       - text: "Blog"
         href: blog.qmd
       - text: "Blog 2"
-        href: DataAcquisition.qmd
+        href: DataAcquisation.qmd
       - text: "Projects"
         menu:
           - text: "Home"
@@ -27,7 +27,7 @@ website:
           - text: "Data Wrangling ang Visualization"
             href: blog.qmd
           - text: "BYU Betting Data (Blog 2)"
-            href: DataAcquisition.qmd
+            href: DataAcquisation.qmd
     right:
       - icon: github
         href: https://github.com/Sam-Kirkham
