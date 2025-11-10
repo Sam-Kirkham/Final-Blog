@@ -1,3 +1,39 @@
+### Introduction
+
+With the success that the BYU football team has had this season it is interesting that they have been betting underdogs for a quite a few games this season,
+including this last week against Iowa State, a team that had already lost two games this season. So when the betting line came out that BYU is a 10.5 point
+underdog for this week's game against Texas Tech I was shocked that it was such a large line. Recently I heard a theory that the lines are skewed in an 
+effort to bring more bettors to the game because a majority of BYU fans do not gamble. So I was interested in looking into this question and seeing what I 
+could learn about BYU betting lines from the last few seasons. My hope from this project is to learn as a fan of BYU, if there is any credit to the skewed
+betting lines or if I should ignore them as they are soley an effort to bring more money to bets on BYU games.
+
+### Motivating Question
+
+The question that I came up with is, what factors are good predictors for if BYU will cover the line that is set by odds makers. What this looks like is are there factors, like BYU is playing at home this weekend, or does the total number of points scored relate to BYU covering the spread given. I also have other factors such 
+as BYU's point differential as well as the starting spread from odds makers.
+
+### Ethical Data Acquisition
+
+I found data for my question of interest on collegefootballdata.com. As I was looking at the datasets that they had available I saw they had a lot of good data for
+any college football team that I wanted and found the data for BYU. After finding the data that I wanted I looked at their terms and conditions to learn more about
+getting data from them. The data was in a format that allowed for easy downloading without signing up for anything, which was a sign that getting data from them was
+okay. They did have an option to sign up for an API key to get data from them as well and after looking into that further I never saw a place where using the API key was the only way to get the data. There was no mention of any restrictions in data usage.
+
+### Summary of Getting Data
+
+From collegefootball.com I was ale to get data for betting lines per season. In order to get enough data to come to some conclusions I grabbed data from the 2020
+season through the games that have been played so far in the 2025 season. Each season's data came as a .csv file so getting the data was not difficult as it just
+required downloading each file and then reading them in using pd.read_csv. In order to create a data set that included all of these seasons I had to use pd.concat.
+After doing that I had a nice data set that included all the data. If someone wanted to follow a similar path of combining .csv files together to make a data set
+I think that pd.concat is the easiest way as it will take the columns that are included in the individual sets and all of those columns will be included in the 
+final data set, any missing data will be filled in with NaNs.
+
+For my question of interest I wanted to extract some data that was already included in the data and add additional columns that would help with the analysis. Most
+of these new columns were simple as they were things like adding two of the original columns or creating boolean statements that would create columns that are
+true or false values. After creating these columns of interest I dropped any columns that I will not be using to ensure that my data is neat and clean. These
+are simple steps that can be done to any dataset that allows for a more in depth analysis.
+
+### EDA Highlights
 ```{python}
 import pandas as pd, json
 import numpy as np
@@ -5,6 +41,28 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import re
 
-df = pd.read_csv('BettingLinesFinal.csv')
-df.head()
+data = pd.read_csv('BettingLinesFinal.csv')
+data.head()
+
+len(data)
+# You can see that I have 251 observations. These come from the games that BYU has played in the last 5 seasons.
+```
+```{python}
+data.describe()
+# Just some basic summary statistics from the data set
+```
+```{python}
+sns.countplot(data = data, x = 'Year', hue = 'Cover')
+plt.show()
+# This plot shows the number of spreads that BYU has covered for each of the last 6 football seasons. From this graph you can clearly see the years that BYU football has had the most success. 
+```
+```{python}
+byu_underdog = data[data['NormalizedSpread'] < 0]
+byu_underdog_25 = byu_underdog[byu_underdog['Year'].isin([2024, 2025])]
+num_underdog_covered = byu_underdog_25['Cover'].sum()
+
+print(f"BYU was an underdog in {len(byu_underdog_25)} games.")
+print(f"BYU covered the spread in {num_underdog_covered} of those games.")
+
+# I was especially interested in the last 2 BYU football seasons so I looked, got just the data for that and found the games where BYU was expected to lose. Here are the results. 
 ```
