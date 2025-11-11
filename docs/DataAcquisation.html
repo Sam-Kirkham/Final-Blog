@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sam Kirkham - Data Science Portfolio</title>
+<title>dataacquisation – Sam Kirkham - Data Science Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,7 +58,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -103,6 +103,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -190,7 +193,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home Page</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./DataAcquisation.html">Introduction</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -208,7 +211,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home Page</span></a>
   </div>
 </li>
@@ -226,7 +229,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./DataAcquisation.html" class="sidebar-item-text sidebar-link">
+  <a href="./DataAcquisation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -240,27 +243,225 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#home-page" id="toc-home-page" class="nav-link active" data-scroll-target="#home-page">Home Page</a></li>
+  <li><a href="#motivating-question" id="toc-motivating-question" class="nav-link active" data-scroll-target="#motivating-question">Motivating Question</a></li>
+  <li><a href="#ethical-data-acquisition" id="toc-ethical-data-acquisition" class="nav-link" data-scroll-target="#ethical-data-acquisition">Ethical Data Acquisition</a></li>
+  <li><a href="#summary-of-getting-data" id="toc-summary-of-getting-data" class="nav-link" data-scroll-target="#summary-of-getting-data">Summary of Getting Data</a></li>
+  <li><a href="#eda-highlights" id="toc-eda-highlights" class="nav-link" data-scroll-target="#eda-highlights">EDA Highlights</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7"></h1></header><div class="quarto-title-block"><div class="quarto-title-tools-only"><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Introduction</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="home-page" class="level1">
-<h1>Home Page</h1>
-<section id="introduction" class="level4">
-<h4 class="anchored" data-anchor-id="introduction">Introduction</h4>
-<p>Hi! My name is Sam Kirkham, I am a statistics major at BYU! A few things about me: I am from Kaysville Ut, I love the outdoors, and I love anything and everything sports. I love watching basketball and football and love working on data for both of these sports as well.</p>
-<p>Two things I have loved learning about are data cleaning and visualization. In this blog I want to share an example as I teach a little bit about this process using sports data. In this example I am looking at the Los Angeles Lakers and whether playing at home or on the road impacts the results of their games. I hope you enjoy!</p>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>With the success that the BYU football team has had this season it is interesting that they have been betting underdogs for a quite a few games this season, including this last week against Iowa State, a team that had already lost two games this season. So when the betting line came out that BYU is a 10.5 point underdog for this week’s game against Texas Tech I was shocked that it was such a large line. Recently I heard a theory that the lines are skewed in an effort to bring more bettors to the game because a majority of BYU fans do not gamble. So I was interested in looking into this question and seeing what I could learn about BYU betting lines from the last few seasons. My hope from this project is to learn as a fan of BYU, if there is any credit to the skewed betting lines or if I should ignore them as they are soley an effort to bring more money to bets on BYU games.</p>
+<section id="motivating-question" class="level3">
+<h3 class="anchored" data-anchor-id="motivating-question">Motivating Question</h3>
+<p>The question that I came up with is, what factors are good predictors for if BYU will cover the line that is set by odds makers. What this looks like is are there factors, like BYU is playing at home this weekend, or does the total number of points scored relate to BYU covering the spread given. I also have other factors such as BYU’s point differential as well as the starting spread from odds makers.</p>
+</section>
+<section id="ethical-data-acquisition" class="level3">
+<h3 class="anchored" data-anchor-id="ethical-data-acquisition">Ethical Data Acquisition</h3>
+<p>I found data for my question of interest on collegefootballdata.com. As I was looking at the datasets that they had available I saw they had a lot of good data for any college football team that I wanted and found the data for BYU. After finding the data that I wanted I looked at their terms and conditions to learn more about getting data from them. The data was in a format that allowed for easy downloading without signing up for anything, which was a sign that getting data from them was okay. They did have an option to sign up for an API key to get data from them as well and after looking into that further I never saw a place where using the API key was the only way to get the data. There was no mention of any restrictions in data usage.</p>
+</section>
+<section id="summary-of-getting-data" class="level3">
+<h3 class="anchored" data-anchor-id="summary-of-getting-data">Summary of Getting Data</h3>
+<p>From collegefootball.com I was ale to get data for betting lines per season. In order to get enough data to come to some conclusions I grabbed data from the 2020 season through the games that have been played so far in the 2025 season. Each season’s data came as a .csv file so getting the data was not difficult as it just required downloading each file and then reading them in using pd.read_csv. In order to create a data set that included all of these seasons I had to use pd.concat. After doing that I had a nice data set that included all the data. If someone wanted to follow a similar path of combining .csv files together to make a data set I think that pd.concat is the easiest way as it will take the columns that are included in the individual sets and all of those columns will be included in the final data set, any missing data will be filled in with NaNs.</p>
+<p>For my question of interest I wanted to extract some data that was already included in the data and add additional columns that would help with the analysis. Most of these new columns were simple as they were things like adding two of the original columns or creating boolean statements that would create columns that are true or false values. After creating these columns of interest I dropped any columns that I will not be using to ensure that my data is neat and clean. These are simple steps that can be done to any dataset that allows for a more in depth analysis.</p>
+</section>
+<section id="eda-highlights" class="level3">
+<h3 class="anchored" data-anchor-id="eda-highlights">EDA Highlights</h3>
+<div id="57342abc" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd, json</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">'BettingLinesFinal.csv'</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>data.head()</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(data)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># You can see that I have 251 observations. These come from the games that BYU has played in the last 5 seasons.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="1">
+<pre><code>251</code></pre>
+</div>
+</div>
+<div id="eeb09b22" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data.describe()</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Just some basic summary statistics from the data set</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">HomeScore</th>
+<th data-quarto-table-cell-role="th">AwayScore</th>
+<th data-quarto-table-cell-role="th">OverUnder</th>
+<th data-quarto-table-cell-role="th">Year</th>
+<th data-quarto-table-cell-role="th">NormalizedSpread</th>
+<th data-quarto-table-cell-role="th">BYU_Diff</th>
+<th data-quarto-table-cell-role="th">TotalScore</th>
+<th data-quarto-table-cell-role="th">Over/Under</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">count</th>
+<td>251.000000</td>
+<td>251.000000</td>
+<td>249.000000</td>
+<td>251.000000</td>
+<td>251.000000</td>
+<td>251.000000</td>
+<td>251.000000</td>
+<td>249.000000</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">mean</th>
+<td>30.247012</td>
+<td>25.163347</td>
+<td>54.871486</td>
+<td>2022.027888</td>
+<td>6.500000</td>
+<td>9.553785</td>
+<td>55.410359</td>
+<td>0.481928</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">std</th>
+<td>12.679540</td>
+<td>12.707526</td>
+<td>7.296676</td>
+<td>1.618400</td>
+<td>13.569598</td>
+<td>19.143670</td>
+<td>14.571580</td>
+<td>13.308857</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">min</th>
+<td>3.000000</td>
+<td>0.000000</td>
+<td>39.500000</td>
+<td>2020.000000</td>
+<td>-24.500000</td>
+<td>-33.000000</td>
+<td>14.000000</td>
+<td>-36.500000</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">25%</th>
+<td>21.500000</td>
+<td>17.000000</td>
+<td>49.500000</td>
+<td>2021.000000</td>
+<td>-3.500000</td>
+<td>-3.000000</td>
+<td>45.500000</td>
+<td>-7.000000</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">50%</th>
+<td>28.000000</td>
+<td>24.000000</td>
+<td>54.500000</td>
+<td>2022.000000</td>
+<td>3.500000</td>
+<td>9.000000</td>
+<td>55.000000</td>
+<td>0.500000</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">75%</th>
+<td>38.000000</td>
+<td>34.000000</td>
+<td>60.000000</td>
+<td>2023.000000</td>
+<td>14.500000</td>
+<td>20.000000</td>
+<td>62.000000</td>
+<td>8.500000</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">max</th>
+<td>69.000000</td>
+<td>55.000000</td>
+<td>80.000000</td>
+<td>2025.000000</td>
+<td>50.000000</td>
+<td>69.000000</td>
+<td>115.000000</td>
+<td>49.000000</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="8a4d437a" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> data, x <span class="op">=</span> <span class="st">'Year'</span>, hue <span class="op">=</span> <span class="st">'Cover'</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># This plot shows the number of spreads that BYU has covered for each of the last 6 football seasons. From this graph you can clearly see the years that BYU football has had the most success. </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="DataAcquisation_files/figure-html/cell-4-output-1.png" width="585" height="429" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="301498c6" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>byu_underdog <span class="op">=</span> data[data[<span class="st">'NormalizedSpread'</span>] <span class="op">&lt;</span> <span class="dv">0</span>]</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>byu_underdog_25 <span class="op">=</span> byu_underdog[byu_underdog[<span class="st">'Year'</span>].isin([<span class="dv">2024</span>, <span class="dv">2025</span>])]</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>num_underdog_covered <span class="op">=</span> byu_underdog_25[<span class="st">'Cover'</span>].<span class="bu">sum</span>()</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"BYU was an underdog in </span><span class="sc">{</span><span class="bu">len</span>(byu_underdog_25)<span class="sc">}</span><span class="ss"> games."</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"BYU covered the spread in </span><span class="sc">{</span>num_underdog_covered<span class="sc">}</span><span class="ss"> of those games."</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># I was especially interested in the last 2 BYU football seasons so I looked, got just the data for that and found the games where BYU was expected to lose. Here are the results. </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>BYU was an underdog in 24 games.
+BYU covered the spread in 21 of those games.</code></pre>
+</div>
+</div>
 
 
 <!-- -->
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -715,11 +916,75 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Home Page</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Introduction</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Hi! My name is Sam Kirkham, I am a statistics major at BYU! A few things about me: I am from Kaysville Ut, I love the outdoors, and I love anything and everything sports. I love watching basketball and football and love working on data for both of these sports as well.</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Two things I have loved learning about are data cleaning and visualization. In this blog I want to share an example as I teach a little bit about this process using sports data. In this example I am looking at the Los Angeles Lakers and whether playing at home or on the road impacts the results of their games. I hope you enjoy!</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">### Introduction</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>With the success that the BYU football team has had this season it is interesting that they have been betting underdogs for a quite a few games this season,</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>including this last week against Iowa State, a team that had already lost two games this season. So when the betting line came out that BYU is a 10.5 point</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>underdog for this week's game against Texas Tech I was shocked that it was such a large line. Recently I heard a theory that the lines are skewed in an </span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>effort to bring more bettors to the game because a majority of BYU fans do not gamble. So I was interested in looking into this question and seeing what I </span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>could learn about BYU betting lines from the last few seasons. My hope from this project is to learn as a fan of BYU, if there is any credit to the skewed</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>betting lines or if I should ignore them as they are soley an effort to bring more money to bets on BYU games.</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="fu">### Motivating Question</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>The question that I came up with is, what factors are good predictors for if BYU will cover the line that is set by odds makers. What this looks like is are there factors, like BYU is playing at home this weekend, or does the total number of points scored relate to BYU covering the spread given. I also have other factors such </span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>as BYU's point differential as well as the starting spread from odds makers.</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="fu">### Ethical Data Acquisition</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>I found data for my question of interest on collegefootballdata.com. As I was looking at the datasets that they had available I saw they had a lot of good data for</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>any college football team that I wanted and found the data for BYU. After finding the data that I wanted I looked at their terms and conditions to learn more about</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>getting data from them. The data was in a format that allowed for easy downloading without signing up for anything, which was a sign that getting data from them was</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>okay. They did have an option to sign up for an API key to get data from them as well and after looking into that further I never saw a place where using the API key was the only way to get the data. There was no mention of any restrictions in data usage.</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a><span class="fu">### Summary of Getting Data</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>From collegefootball.com I was ale to get data for betting lines per season. In order to get enough data to come to some conclusions I grabbed data from the 2020</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>season through the games that have been played so far in the 2025 season. Each season's data came as a .csv file so getting the data was not difficult as it just</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>required downloading each file and then reading them in using pd.read_csv. In order to create a data set that included all of these seasons I had to use pd.concat.</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>After doing that I had a nice data set that included all the data. If someone wanted to follow a similar path of combining .csv files together to make a data set</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>I think that pd.concat is the easiest way as it will take the columns that are included in the individual sets and all of those columns will be included in the </span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>final data set, any missing data will be filled in with NaNs.</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>For my question of interest I wanted to extract some data that was already included in the data and add additional columns that would help with the analysis. Most</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>of these new columns were simple as they were things like adding two of the original columns or creating boolean statements that would create columns that are</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>true or false values. After creating these columns of interest I dropped any columns that I will not be using to ensure that my data is neat and clean. These</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>are simple steps that can be done to any dataset that allows for a more in depth analysis.</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a><span class="fu">### EDA Highlights</span></span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd, json</span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">'BettingLinesFinal.csv'</span>)</span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a>data.head()</span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(data)</span>
+<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a><span class="co"># You can see that I have 251 observations. These come from the games that BYU has played in the last 5 seasons.</span></span>
+<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a>data.describe()</span>
+<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a><span class="co"># Just some basic summary statistics from the data set</span></span>
+<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-60"><a href="#cb7-60" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-61"><a href="#cb7-61" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> data, x <span class="op">=</span> <span class="st">'Year'</span>, hue <span class="op">=</span> <span class="st">'Cover'</span>)</span>
+<span id="cb7-62"><a href="#cb7-62" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a><span class="co"># This plot shows the number of spreads that BYU has covered for each of the last 6 football seasons. From this graph you can clearly see the years that BYU football has had the most success. </span></span>
+<span id="cb7-64"><a href="#cb7-64" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a>byu_underdog <span class="op">=</span> data[data[<span class="st">'NormalizedSpread'</span>] <span class="op">&lt;</span> <span class="dv">0</span>]</span>
+<span id="cb7-69"><a href="#cb7-69" aria-hidden="true" tabindex="-1"></a>byu_underdog_25 <span class="op">=</span> byu_underdog[byu_underdog[<span class="st">'Year'</span>].isin([<span class="dv">2024</span>, <span class="dv">2025</span>])]</span>
+<span id="cb7-70"><a href="#cb7-70" aria-hidden="true" tabindex="-1"></a>num_underdog_covered <span class="op">=</span> byu_underdog_25[<span class="st">'Cover'</span>].<span class="bu">sum</span>()</span>
+<span id="cb7-71"><a href="#cb7-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-72"><a href="#cb7-72" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"BYU was an underdog in </span><span class="sc">{</span><span class="bu">len</span>(byu_underdog_25)<span class="sc">}</span><span class="ss"> games."</span>)</span>
+<span id="cb7-73"><a href="#cb7-73" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"BYU covered the spread in </span><span class="sc">{</span>num_underdog_covered<span class="sc">}</span><span class="ss"> of those games."</span>)</span>
+<span id="cb7-74"><a href="#cb7-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-75"><a href="#cb7-75" aria-hidden="true" tabindex="-1"></a><span class="co"># I was especially interested in the last 2 BYU football seasons so I looked, got just the data for that and found the games where BYU was expected to lose. Here are the results. </span></span>
+<span id="cb7-76"><a href="#cb7-76" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
