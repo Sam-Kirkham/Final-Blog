@@ -289,7 +289,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="eda-highlights" class="level3">
 <h3 class="anchored" data-anchor-id="eda-highlights">EDA Highlights</h3>
-<div id="45dcf62a" class="cell" data-execution_count="1">
+<div id="030dae73" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd, json</span>
@@ -308,7 +308,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>You can see that I have 251 observations. These come from the games that BYU has played in the last 6 seasons.</p>
-<div id="0390ab36" class="cell" data-execution_count="2">
+<div id="f82e9ebc" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data.describe()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -427,7 +427,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Just some basic summary statistics from the data set.</p>
-<div id="a8c01f92" class="cell" data-execution_count="3">
+<div id="65e2125c" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> data, x <span class="op">=</span> <span class="st">'Year'</span>, hue <span class="op">=</span> <span class="st">'Cover'</span>)</span>
@@ -442,7 +442,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>This plot shows the number of spreads that BYU has covered for each of the last 6 football seasons. From this graph you can clearly see the years that BYU football has had the most success.</p>
-<div id="37519663" class="cell" data-execution_count="4">
+<div id="4fa7f8da" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>byu_underdog <span class="op">=</span> data[data[<span class="st">'NormalizedSpread'</span>] <span class="op">&lt;</span> <span class="dv">0</span>]</span>
