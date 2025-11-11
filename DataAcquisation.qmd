@@ -44,10 +44,14 @@ import re
 data = pd.read_csv('BettingLinesFinal.csv')
 data.head()
 
+#| echo: true
+#| code-fold: false
 len(data)
-# You can see that I have 251 observations. These come from the games that BYU has played in the last 5 seasons.
+# You can see that I have 251 observations. These come from the games that BYU has played in the last 6 seasons.
 ```
 ```{python}
+#| echo: true
+#| code-fold: false
 data.describe()
 # Just some basic summary statistics from the data set
 ```
