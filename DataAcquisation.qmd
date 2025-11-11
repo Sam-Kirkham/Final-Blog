@@ -34,6 +34,7 @@ true or false values. After creating these columns of interest I dropped any col
 are simple steps that can be done to any dataset that allows for a more in depth analysis.
 
 ### EDA Highlights
+
 ```{python}
 import pandas as pd, json
 import numpy as np
@@ -66,7 +67,7 @@ print(f"BYU covered the spread in {num_underdog_covered} of those games.")
 ```
 I was especially interested in the last 2 BYU football seasons so I looked, got just the data for that and found the games where BYU was expected to lose. Here are the results. 
 
-**Links to Resources:**
+### Links to Resources:
 
 [Link for the data](https://collegefootballdata.com/exporter/lines)  
 [Link for more code](https://github.com/Sam-Kirkham/Data-Acquisition-Blog)
