@@ -277,7 +277,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="importing-data" class="level3">
 <h3 class="anchored" data-anchor-id="importing-data">Importing Data</h3>
 <p>The very first thing that we need to do in answering the question of if home court advantage really helps teams win is to get clean and usable data that will show us trends and help us come up with an answer. The data set that I found contains quite a bit of information, such as points scored, field goals made, and free throw percentage. However, in this tutorial we are not interested in those variables. As part of data wrangling we can make the data a whole lot cleaner simply by eliminating the variables that we are not interested in. When reading in data using the “pd.read_csv()” function we can use the built-in feature of “usecols =” to select the columns from the dataset that we are interested in. Here you can see that I selected to use the columns “MATCH UP”, “GAME DATE”, and “W/L”</p>
-<div id="37e120fb" class="cell" data-execution_count="1">
+<div id="4d2b32cb" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd, json</span>
@@ -299,7 +299,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="data-wrangling" class="level3">
 <h3 class="anchored" data-anchor-id="data-wrangling">Data Wrangling</h3>
 <p>After importing the data I need to do some data wrangling in order to do any anlysis towards the main question. I renamed the columns using the function “data.rename” for simplicity. After renaming the columns it was easier to run it through a function to seperate Home and Away games. To do this I created the “home_away” fuction which goes through the columns and if the designated string is in the value it assigns either “Home” or “Away”. I then applied this to the data and created a new column so that I can easily see whether the game was at home or if it was away.</p>
-<div id="8d05604e" class="cell" data-execution_count="2">
+<div id="e80d4656" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data.rename(columns <span class="op">=</span> {</span>
@@ -331,7 +331,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="data-analysis-and-visualization" class="level3">
 <h3 class="anchored" data-anchor-id="data-analysis-and-visualization">Data Analysis and Visualization</h3>
 <p>After doing some basic data wrangling, I did some simple data analysis and created a visual to help understand the data. Since I am interested in learning whether home court advantage exists for this basketball team I calculated the win percentages at both home and away. So we can see in the code output that the team wins at home 55 percent of the time and wins on the road 41 percent of the time. The visual that I created shows both the wins and losses at home and away so viewers can see the difference and compare. This visual helps us to see quickly that the team does win more games when playing at home and we can see that percentage that we just calculated.</p>
-<div id="e667d115" class="cell" data-execution_count="3">
+<div id="dd6c7ec6" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>

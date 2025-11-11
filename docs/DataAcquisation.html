@@ -243,7 +243,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction:</a></li>
   <li><a href="#motivating-question" id="toc-motivating-question" class="nav-link" data-scroll-target="#motivating-question">Motivating Question:</a></li>
   <li><a href="#ethical-data-acquisition" id="toc-ethical-data-acquisition" class="nav-link" data-scroll-target="#ethical-data-acquisition">Ethical Data Acquisition:</a></li>
   <li><a href="#summary-of-getting-data" id="toc-summary-of-getting-data" class="nav-link" data-scroll-target="#summary-of-getting-data">Summary of Getting Data:</a></li>
@@ -275,7 +275,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <section id="introduction" class="level3">
-<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<h3 class="anchored" data-anchor-id="introduction">Introduction:</h3>
 <p>With the success that the BYU football team has had this season it is interesting that they have been betting underdogs for a quite a few games this season, including this last week against Iowa State, a team that had already lost two games this season. So when the betting line came out that BYU is a 10.5 point underdog for this week’s game against Texas Tech I was shocked that it was such a large line. Recently I heard a theory that the lines are skewed in an effort to bring more bettors to the game because a majority of BYU fans do not gamble. So I was interested in looking into this question and seeing what I could learn about BYU betting lines from the last few seasons. My hope from this project is to learn as a fan of BYU, if there is any credit to the skewed betting lines or if I should ignore them as they are soley an effort to bring more money to bets on BYU games.</p>
 </section>
 <section id="motivating-question" class="level3">
@@ -293,7 +293,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="eda-highlights" class="level3">
 <h3 class="anchored" data-anchor-id="eda-highlights">EDA Highlights:</h3>
-<div id="800ce35b" class="cell" data-execution_count="1">
+<div id="d97aaa0f" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd, json</span>
@@ -312,7 +312,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>You can see that I have 251 observations. These come from the games that BYU has played in the last 6 seasons.</p>
-<div id="8f4a71e8" class="cell" data-execution_count="2">
+<div id="2647e66e" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data.describe()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -431,7 +431,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Just some basic summary statistics from the data set.</p>
-<div id="74cbb40f" class="cell" data-execution_count="3">
+<div id="c4625f9c" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> data, x <span class="op">=</span> <span class="st">'Year'</span>, hue <span class="op">=</span> <span class="st">'Cover'</span>)</span>
@@ -446,7 +446,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>This plot shows the number of spreads that BYU has covered for each of the last 6 football seasons. From this graph you can clearly see the years that BYU football has had the most success.</p>
-<div id="6ec2844a" class="cell" data-execution_count="4">
+<div id="b30e7436" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>byu_underdog <span class="op">=</span> data[data[<span class="st">'NormalizedSpread'</span>] <span class="op">&lt;</span> <span class="dv">0</span>]</span>
@@ -465,8 +465,8 @@ BYU covered the spread in 21 of those games.</code></pre>
 </section>
 <section id="links-to-resources" class="level3">
 <h3 class="anchored" data-anchor-id="links-to-resources">Links to Resources:</h3>
-<p><a href="https://collegefootballdata.com/exporter/lines">Link for the data</a><br>
-<a href="https://github.com/Sam-Kirkham/Data-Acquisition-Blog">Link for more code</a></p>
+<p><a href="https://collegefootballdata.com/exporter/lines">Link For The Data</a><br>
+<a href="https://github.com/Sam-Kirkham/Data-Acquisition-Blog">Link For More Code</a></p>
 
 
 <!-- -->
@@ -927,7 +927,7 @@ BYU covered the spread in 21 of those games.</code></pre>
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Acquisition Blog 2</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">### Introduction</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">### Introduction:</span></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>With the success that the BYU football team has had this season it is interesting that they have been betting underdogs for a quite a few games this season,</span>
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>including this last week against Iowa State, a team that had already lost two games this season. So when the betting line came out that BYU is a 10.5 point</span>
@@ -998,8 +998,8 @@ BYU covered the spread in 21 of those games.</code></pre>
 <span id="cb7-79"><a href="#cb7-79" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a><span class="fu">### Links to Resources:</span></span>
 <span id="cb7-81"><a href="#cb7-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-82"><a href="#cb7-82" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Link for the data</span><span class="co">](https://collegefootballdata.com/exporter/lines)</span>  </span>
-<span id="cb7-83"><a href="#cb7-83" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Link for more code</span><span class="co">](https://github.com/Sam-Kirkham/Data-Acquisition-Blog)</span></span>
+<span id="cb7-82"><a href="#cb7-82" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Link For The Data</span><span class="co">](https://collegefootballdata.com/exporter/lines)</span>  </span>
+<span id="cb7-83"><a href="#cb7-83" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Link For More Code</span><span class="co">](https://github.com/Sam-Kirkham/Data-Acquisition-Blog)</span></span>
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
