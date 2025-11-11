@@ -71,5 +71,5 @@ I was especially interested in the last 2 BYU football seasons so I looked, got 
 
 ### Links to Resources:
 
-[Link for the data](https://collegefootballdata.com/exporter/lines)  
-[Link for more code](https://github.com/Sam-Kirkham/Data-Acquisition-Blog)
+[Link For The Data](https://collegefootballdata.com/exporter/lines)  
+[Link For More Code](https://github.com/Sam-Kirkham/Data-Acquisition-Blog)
