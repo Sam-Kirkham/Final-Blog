@@ -67,5 +67,5 @@ print(f"BYU covered the spread in {num_underdog_covered} of those games.")
 I was especially interested in the last 2 BYU football seasons so I looked, got just the data for that and found the games where BYU was expected to lose. Here are the results. 
 
 ### Links to Resources:
-Link for the data: https://collegefootballdata.com/exporter/lines<br>
+Link for the data: https://collegefootballdata.com/exporter/lines  
 Link for more code: https://github.com/Sam-Kirkham/Data-Acquisition-Blog 
