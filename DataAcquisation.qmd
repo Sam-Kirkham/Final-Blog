@@ -1,3 +1,5 @@
+## Data Acquisition Blog 2
+
 ### Introduction
 
 With the success that the BYU football team has had this season it is interesting that they have been betting underdogs for a quite a few games this season,
@@ -7,19 +9,19 @@ effort to bring more bettors to the game because a majority of BYU fans do not g
 could learn about BYU betting lines from the last few seasons. My hope from this project is to learn as a fan of BYU, if there is any credit to the skewed
 betting lines or if I should ignore them as they are soley an effort to bring more money to bets on BYU games.
 
-### Motivating Question
+### Motivating Question:
 
 The question that I came up with is, what factors are good predictors for if BYU will cover the line that is set by odds makers. What this looks like is are there factors, like BYU is playing at home this weekend, or does the total number of points scored relate to BYU covering the spread given. I also have other factors such 
 as BYU's point differential as well as the starting spread from odds makers.
 
-### Ethical Data Acquisition
+### Ethical Data Acquisition:
 
 I found data for my question of interest on collegefootballdata.com. As I was looking at the datasets that they had available I saw they had a lot of good data for
 any college football team that I wanted and found the data for BYU. After finding the data that I wanted I looked at their terms and conditions to learn more about
 getting data from them. The data was in a format that allowed for easy downloading without signing up for anything, which was a sign that getting data from them was
 okay. They did have an option to sign up for an API key to get data from them as well and after looking into that further I never saw a place where using the API key was the only way to get the data. There was no mention of any restrictions in data usage.
 
-### Summary of Getting Data
+### Summary of Getting Data:
 
 From collegefootball.com I was ale to get data for betting lines per season. In order to get enough data to come to some conclusions I grabbed data from the 2020
 season through the games that have been played so far in the 2025 season. Each season's data came as a .csv file so getting the data was not difficult as it just
@@ -33,7 +35,7 @@ of these new columns were simple as they were things like adding two of the orig
 true or false values. After creating these columns of interest I dropped any columns that I will not be using to ensure that my data is neat and clean. These
 are simple steps that can be done to any dataset that allows for a more in depth analysis.
 
-### EDA Highlights
+### EDA Highlights:
 
 ```{python}
 import pandas as pd, json
