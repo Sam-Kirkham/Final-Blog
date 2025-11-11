@@ -247,6 +247,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#ethical-data-acquisition" id="toc-ethical-data-acquisition" class="nav-link" data-scroll-target="#ethical-data-acquisition">Ethical Data Acquisition</a></li>
   <li><a href="#summary-of-getting-data" id="toc-summary-of-getting-data" class="nav-link" data-scroll-target="#summary-of-getting-data">Summary of Getting Data</a></li>
   <li><a href="#eda-highlights" id="toc-eda-highlights" class="nav-link" data-scroll-target="#eda-highlights">EDA Highlights</a></li>
+  <li><a href="#links-to-resources" id="toc-links-to-resources" class="nav-link" data-scroll-target="#links-to-resources">Links to Resources:</a></li>
   </ul>
 </nav>
     </div>
@@ -288,7 +289,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="eda-highlights" class="level3">
 <h3 class="anchored" data-anchor-id="eda-highlights">EDA Highlights</h3>
-<div id="f7d842a1" class="cell" data-execution_count="1">
+<div id="81dc888b" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd, json</span>
@@ -307,7 +308,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>You can see that I have 251 observations. These come from the games that BYU has played in the last 6 seasons.</p>
-<div id="92fa13f5" class="cell" data-execution_count="2">
+<div id="44a0c01f" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data.describe()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -426,7 +427,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Just some basic summary statistics from the data set.</p>
-<div id="5c08a807" class="cell" data-execution_count="3">
+<div id="276f22e3" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> data, x <span class="op">=</span> <span class="st">'Year'</span>, hue <span class="op">=</span> <span class="st">'Cover'</span>)</span>
@@ -441,7 +442,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>This plot shows the number of spreads that BYU has covered for each of the last 6 football seasons. From this graph you can clearly see the years that BYU football has had the most success.</p>
-<div id="efb38f44" class="cell" data-execution_count="4">
+<div id="2731f856" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>byu_underdog <span class="op">=</span> data[data[<span class="st">'NormalizedSpread'</span>] <span class="op">&lt;</span> <span class="dv">0</span>]</span>
@@ -457,7 +458,9 @@ BYU covered the spread in 21 of those games.</code></pre>
 </div>
 </div>
 <p>I was especially interested in the last 2 BYU football seasons so I looked, got just the data for that and found the games where BYU was expected to lose. Here are the results.</p>
-<p><strong>Links to Resources:</strong></p>
+</section>
+<section id="links-to-resources" class="level3">
+<h3 class="anchored" data-anchor-id="links-to-resources">Links to Resources:</h3>
 <p><a href="https://collegefootballdata.com/exporter/lines">Link for the data</a><br>
 <a href="https://github.com/Sam-Kirkham/Data-Acquisition-Blog">Link for more code</a></p>
 
@@ -954,42 +957,43 @@ BYU covered the spread in 21 of those games.</code></pre>
 <span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>are simple steps that can be done to any dataset that allows for a more in depth analysis.</span>
 <span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a><span class="fu">### EDA Highlights</span></span>
-<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd, json</span>
-<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
-<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">'BettingLinesFinal.csv'</span>)</span>
-<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a>data.head()</span>
-<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(data)</span>
-<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a>You can see that I have 251 observations. These come from the games that BYU has played in the last 6 seasons.</span>
-<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a>data.describe()</span>
-<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a>Just some basic summary statistics from the data set.</span>
-<span id="cb7-60"><a href="#cb7-60" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb7-61"><a href="#cb7-61" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> data, x <span class="op">=</span> <span class="st">'Year'</span>, hue <span class="op">=</span> <span class="st">'Cover'</span>)</span>
-<span id="cb7-62"><a href="#cb7-62" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb7-64"><a href="#cb7-64" aria-hidden="true" tabindex="-1"></a>This plot shows the number of spreads that BYU has covered for each of the last 6 football seasons. From this graph you can clearly see the years that BYU football has had the most success. </span>
-<span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a>byu_underdog <span class="op">=</span> data[data[<span class="st">'NormalizedSpread'</span>] <span class="op">&lt;</span> <span class="dv">0</span>]</span>
-<span id="cb7-69"><a href="#cb7-69" aria-hidden="true" tabindex="-1"></a>byu_underdog_25 <span class="op">=</span> byu_underdog[byu_underdog[<span class="st">'Year'</span>].isin([<span class="dv">2024</span>, <span class="dv">2025</span>])]</span>
-<span id="cb7-70"><a href="#cb7-70" aria-hidden="true" tabindex="-1"></a>num_underdog_covered <span class="op">=</span> byu_underdog_25[<span class="st">'Cover'</span>].<span class="bu">sum</span>()</span>
-<span id="cb7-71"><a href="#cb7-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-72"><a href="#cb7-72" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"BYU was an underdog in </span><span class="sc">{</span><span class="bu">len</span>(byu_underdog_25)<span class="sc">}</span><span class="ss"> games."</span>)</span>
-<span id="cb7-73"><a href="#cb7-73" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"BYU covered the spread in </span><span class="sc">{</span>num_underdog_covered<span class="sc">}</span><span class="ss"> of those games."</span>)</span>
-<span id="cb7-74"><a href="#cb7-74" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb7-75"><a href="#cb7-75" aria-hidden="true" tabindex="-1"></a>I was especially interested in the last 2 BYU football seasons so I looked, got just the data for that and found the games where BYU was expected to lose. Here are the results. </span>
-<span id="cb7-76"><a href="#cb7-76" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-77"><a href="#cb7-77" aria-hidden="true" tabindex="-1"></a>**Links to Resources:**</span>
-<span id="cb7-78"><a href="#cb7-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-79"><a href="#cb7-79" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Link for the data</span><span class="co">](https://collegefootballdata.com/exporter/lines)</span>  </span>
-<span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Link for more code</span><span class="co">](https://github.com/Sam-Kirkham/Data-Acquisition-Blog)</span></span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd, json</span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">'BettingLinesFinal.csv'</span>)</span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a>data.head()</span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(data)</span>
+<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a>You can see that I have 251 observations. These come from the games that BYU has played in the last 6 seasons.</span>
+<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a>data.describe()</span>
+<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a>Just some basic summary statistics from the data set.</span>
+<span id="cb7-61"><a href="#cb7-61" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-62"><a href="#cb7-62" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> data, x <span class="op">=</span> <span class="st">'Year'</span>, hue <span class="op">=</span> <span class="st">'Cover'</span>)</span>
+<span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb7-64"><a href="#cb7-64" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-65"><a href="#cb7-65" aria-hidden="true" tabindex="-1"></a>This plot shows the number of spreads that BYU has covered for each of the last 6 football seasons. From this graph you can clearly see the years that BYU football has had the most success. </span>
+<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-69"><a href="#cb7-69" aria-hidden="true" tabindex="-1"></a>byu_underdog <span class="op">=</span> data[data[<span class="st">'NormalizedSpread'</span>] <span class="op">&lt;</span> <span class="dv">0</span>]</span>
+<span id="cb7-70"><a href="#cb7-70" aria-hidden="true" tabindex="-1"></a>byu_underdog_25 <span class="op">=</span> byu_underdog[byu_underdog[<span class="st">'Year'</span>].isin([<span class="dv">2024</span>, <span class="dv">2025</span>])]</span>
+<span id="cb7-71"><a href="#cb7-71" aria-hidden="true" tabindex="-1"></a>num_underdog_covered <span class="op">=</span> byu_underdog_25[<span class="st">'Cover'</span>].<span class="bu">sum</span>()</span>
+<span id="cb7-72"><a href="#cb7-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-73"><a href="#cb7-73" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"BYU was an underdog in </span><span class="sc">{</span><span class="bu">len</span>(byu_underdog_25)<span class="sc">}</span><span class="ss"> games."</span>)</span>
+<span id="cb7-74"><a href="#cb7-74" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"BYU covered the spread in </span><span class="sc">{</span>num_underdog_covered<span class="sc">}</span><span class="ss"> of those games."</span>)</span>
+<span id="cb7-75"><a href="#cb7-75" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-76"><a href="#cb7-76" aria-hidden="true" tabindex="-1"></a>I was especially interested in the last 2 BYU football seasons so I looked, got just the data for that and found the games where BYU was expected to lose. Here are the results. </span>
+<span id="cb7-77"><a href="#cb7-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-78"><a href="#cb7-78" aria-hidden="true" tabindex="-1"></a><span class="fu">### Links to Resources:</span></span>
+<span id="cb7-79"><a href="#cb7-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Link for the data</span><span class="co">](https://collegefootballdata.com/exporter/lines)</span>  </span>
+<span id="cb7-81"><a href="#cb7-81" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Link for more code</span><span class="co">](https://github.com/Sam-Kirkham/Data-Acquisition-Blog)</span></span>
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
