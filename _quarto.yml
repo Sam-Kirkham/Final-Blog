@@ -19,6 +19,8 @@ website:
         href: DataAcquisation.qmd
       - text: "Final"
         href: Final.qmd
+      - text: "Demo"
+        href: Package_Demo.qmd
       - text: "Projects"
         menu:
           - text: "Home"
