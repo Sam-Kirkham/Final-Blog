@@ -17,6 +17,8 @@ website:
         href: blog.qmd
       - text: "Blog 2"
         href: DataAcquisation.qmd
+      - text: "Final"
+        href: Final.qmd
       - text: "Projects"
         menu:
           - text: "Home"

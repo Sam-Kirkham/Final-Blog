@@ -1,0 +1,38 @@
+### Demonstration of the Functions:
+
+```{python}
+#| echo: False
+
+def wrangle_data(filepath, value_col, drop_rows=None, rename_from=None):
+    df = pd.read_csv(filepath)
+    
+    if drop_rows is not None:
+        df = df.drop(drop_rows)
+    
+    df['Year'] = df['observation_date'].str.extract(r'(\d{4})')
+    df['Month'] = df['observation_date'].str.extract(r'((?<=\d{4}-)\d{2})')
+    
+    if rename_from is not None:
+        df[value_col] = df[rename_from]
+        df = df.drop(rename_from, axis=1)
+    
+    df = df.drop('observation_date', axis=1)
+    
+    df['Month'] = df['Month'].astype(int)
+    df['Month'] = pd.to_datetime(df['Month'], format='%m').dt.month_name()
+    df['Year'] = df['Year'].astype(int)
+    
+    column_order = ['Month', 'Year', value_col]
+    df = df[column_order]
+    
+    return df
+```
+
+```{python}
+UNRATE = wrangle_data(
+    filepath='UNRATE.csv',
+    value_col='UNRATE'
+)
+
+UNRATE.head()
+```
