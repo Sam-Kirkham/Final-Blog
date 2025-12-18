@@ -2,6 +2,7 @@
 
 ```{python}
 #| echo: False
+import pandas as pd
 
 def wrangle_data(filepath, value_col, drop_rows=None, rename_from=None):
     df = pd.read_csv(filepath)
